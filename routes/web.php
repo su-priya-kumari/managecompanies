@@ -18,11 +18,11 @@ use App\Http\Controllers\EmployeesController;
 Route::get('/',[AdminController::class,'loginpage'])->name('loginpage');
 Route::post('/login',[AdminController::class,'login'])->name('login');
 Route::get('/index',[AdminController::class,'index'])->name('index');
+Route::get('/logout',[AdminController::class,'logout'])->name('logout');
 
-// Route::get('/companypage',[CompaniesController::class,'index'])->name('companypage');
+
 Route::resource('companies', CompaniesController::class);
 
-// Route::get('/employeepage',[EmployeesController::class,'index'])->name('employeepage');
 Route::resource('employees',EmployeesController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

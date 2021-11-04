@@ -15,7 +15,8 @@
             <a href="{{route('index')}}" class="navbar-brand">ADMIN PANEL</a>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a href="{{route('companies.index')}}" class="nav-link text-white"> Companies</a></li>     
-                <li class="nav-item"><a href="{{route('employees.index')}}" class="nav-link text-white"> Employees</a></li>     
+                <li class="nav-item"><a href="{{route('employees.index')}}" class="nav-link text-white"> Employees</a></li>
+                <li class="nav-item"><a href="{{route('logout')}}" class="nav-link text-white"> Logout</a></li>          
             </ul>
         </div>
     </nav>
