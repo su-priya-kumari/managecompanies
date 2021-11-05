@@ -14,7 +14,7 @@ class EmployeesController extends Controller
     {   $c_data = DB::table('companies')->select('id','name')->get();
         // $a = companies::pluck('name');
         // dd($a);
-        $records = employees::paginate(5);
+        $records = employees::paginate(10);
         return view('admin.employees', compact('c_data', 'records'));
     }
 

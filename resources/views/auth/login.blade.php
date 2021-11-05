@@ -59,7 +59,7 @@
    <div class="container">
        <div class="row" style="margin-top: 45px">
            <div class="col-md-4 col-md-offset-4 mx-auto">
-               <h4>User Login</h4>
+               <h4>Admin Login</h4>
                <hr>
                <form action="{{ route('login') }}" method="post">
                    @csrf

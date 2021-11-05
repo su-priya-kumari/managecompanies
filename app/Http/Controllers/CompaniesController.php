@@ -13,7 +13,7 @@ class CompaniesController extends Controller
         // $c_data =DB::table('companies')->select('id','name')->get();
         $a = companies::pluck('name');
         // dd($a);
-        $records = companies::paginate(5);
+        $records = companies::paginate(10);
         return view('admin.companies', compact('a', 'records'));
     }
 

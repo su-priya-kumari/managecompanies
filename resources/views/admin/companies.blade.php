@@ -55,11 +55,11 @@
                         <td><img src="{{asset('images/'.$record->logo)}}" alt="" width="120px" class="mx-auto"></td>
                         <td>{{$record->website}}</td>
                         <td>
-                            <a href="{{route('companies.edit',['company'=>$record->id])}}" class="btn btn-secondary">Edit</a>
+                            <a href="{{route('companies.edit',['company'=>$record->id])}}" class="btn btn-sm btn-secondary">Edit</a>
                             <form action="{{route('companies.destroy',['company'=>$record->id])}}" method="POST" class="d-inline">
                                 @csrf
                                 @method('delete')
-                                <input type="submit" value="Delete" class="btn btn-danger">
+                                <input type="submit" value="Delete" class="btn btn-sm btn-danger">
                             </form>
                         </td>
                     </tbody>
